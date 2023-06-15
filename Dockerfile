@@ -6,10 +6,10 @@ ENV MODEL_NAME text-detection
 ENV MODEL_VERSION 1
 
 # Copy the model files into the container
-COPY ./models /models/${MODEL_NAME}/${MODEL_VERSION}
+COPY ./models2 /models2/${MODEL_NAME}/${MODEL_VERSION}
 
 # Set the model base path environment variable
-ENV MODEL_BASE_PATH /models
+ENV MODEL_BASE_PATH /models2
 
 # Set the model name and version environment variables
 ENV MODEL_NAME ${MODEL_NAME}
