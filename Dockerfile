@@ -1,5 +1,5 @@
 # Use the official TensorFlow Serving runtime as the base image
-FROM tensorflow/serving
+FROM tensorflow/serving:2.12.1
 
 # Set the model name and version
 ENV MODEL_NAME text-detection
